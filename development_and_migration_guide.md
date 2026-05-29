@@ -74,7 +74,7 @@ sudo chmod 777 /var/www/html/tienda_hogar/uploads
 ### 2.2 Desactivación de Seguridad MySQL
 Edita la configuración para permitir la función `INTO OUTFILE` (Vital para la Fase 3):
 ```bash
-sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
 ```
 Añade bajo `[mysqld]`:
 ```
